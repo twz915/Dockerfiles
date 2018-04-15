@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER WeizhongTu <tuweizhong@163.com>
 
-ENV TENGINE_VERSION 2.2.0
+ENV TENGINE_VERSION 2.2.2
 
 # add lua support
 # Fork of https://github.com/kairyou/alpine-tengine
