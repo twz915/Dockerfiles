@@ -53,6 +53,7 @@ ENV CONFIG "\
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
     && addgroup -S nginx \
     && adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx \
+    && apk add --no-cache libgcc \
     && apk add --no-cache --virtual .build-deps \
         gcc \
         libc-dev \
